@@ -1,0 +1,227 @@
+.ride-booking-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.connection-waiting {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Booking form styles */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+/* Searching status styles */
+.searching-status {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pulse-animation {
+  margin-bottom: 20px;
+}
+
+.car-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+.searching-status h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.searching-status p {
+  font-size: 14px;
+  color: #718096;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Driver assigned styles */
+.driver-assigned {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.driver-info {
+  display: flex;
+  align-items: center;
+  background-color: #ebf8ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.driver-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #bee3f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.driver-info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.driver-details {
+  font-size: 14px;
+  color: #718096;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 8px;
+}
+
+.eta-info {
+  font-size: 14px;
+  color: #4299e1;
+  display: flex;
+  align-items: center;
+}
+
+.location-details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.location-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.location-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.location-address {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Button styles */
+.primary-button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #3182ce;
+}
+
+.primary-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.secondary-button:hover {
+  background-color: #f7fafc;
+}
